@@ -1,0 +1,54 @@
+.login-page{
+    position: relative;
+    height: 100%;
+}
+
+.login-section{
+    background-color: var(--background-color);
+    border-radius: 7px;
+    box-shadow: 1px 1px 5px 1px #d3d3d3;
+    padding: 20px;
+    width: calc(100% - 600px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-section header{
+    display: flex;
+    justify-content: center;
+}
+
+.login-section header i{
+    font-size: 150px;
+    color: var(--primary-color);
+}
+
+.login-section main{
+    margin: 30px;
+}
+
+.button {
+    width: 25%;
+    font-size: 20px;
+    padding: 2px !important;
+}
+
+@media screen and (max-width: 1150px) {
+    .login-section{
+        width: calc(100% - 500px);
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .login-section{
+        width: calc(100% - 200px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .login-section{
+        width: calc(100% - 50px);
+    }
+}

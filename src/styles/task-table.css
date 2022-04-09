@@ -1,0 +1,54 @@
+.table-view{
+    width: 100%;
+    height: 800px;
+    display: block;
+    justify-content: center;
+}
+
+.table-view table{
+    width: 100%;
+    overflow-y: auto;
+}
+
+.table-view table, .table-view th, .table-view td{
+    border-bottom: 2px solid rgba(228, 228, 228, 0.644);
+    border-collapse: collapse;
+}
+
+.table-view table thead th, .table-view table tbody td{
+    padding: 20px 0;
+    text-align: left;
+}
+
+.table-view table tbody td i{
+    padding-left: 8px;
+}
+
+.t1{
+    width: 4%;
+}
+
+.t2, .t3, .t5{
+    width: 22%
+}
+
+.t4, .t6{
+    width: 15%;
+}
+
+.buttons-add-edit{
+    font-size: 25px;
+    color: var(--primary-color)
+}
+
+.buttons-add-edit .add:hover{
+    color: var(--prymary-darker-color)
+}
+
+.buttons-add-edit .edit:hover{
+    color: var(--prymary-darker-color)
+}
+
+.dialog label, .dialog input{
+    font-family: 'Poppins', sans-serif;
+}

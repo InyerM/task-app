@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+}
+
+:root{
+    --body-color: #E6E8E6;
+    --background-color: #F1F2F6;
+    --primary-color: #00A7E1;
+    --prymary-lighter-color: #33B9E7;
+    --prymary-darker-color: #007ea7;
+    --primary-color-light: #ededf5;
+    --gray: #323c41;
+    --text-color: #707070;
+
+    --tran-02: all 0.2s ease;
+}
+
+/*Navbar home*/
+
+.nav-home{
+    width: 100%;
+}
+
+.nav-home ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--primary-color);
+}
+
+.nav-home ul li{
+    float: left;
+    transition: var(--tran-02)
+}
+
+.nav-home ul li a{
+    color: var(--primary-color-light);
+    text-decoration: none;
+    display: block;
+    font-weight: 600;
+    padding: 14px 16px;
+}
+
+.nav-home ul li:hover{
+    background-color: var(--prymary-darker-color);
+}
+
+.nav-home ul #right {
+    float: right;
+}
+
+.nav-item #logout{
+    margin-right: 10px;
+}
+
+/* home design */
+
+.home-page{
+    display: block;
+}
+
+.left-column {
+    width: 44%;
+    margin-left: 20px;
+    height: 500px;
+    position: relative;
+}
+
+.left-column article {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    right: 5%;
+}
+
+.left-column article h1{
+    font-size: 75px;
+    line-height: 4rem;
+}
+
+.left-column article p{
+    font-size: 25px;
+    line-height: 2rem;
+}
+
+.right-column {
+    width: 50%;
+    margin-left: 20px;
+    height: 500px;
+    position: relative;
+}
+
+.right-column img{
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.left-column, .right-column{
+    margin-top: 20px;
+    background-color: var(--background-color);
+    float: left;
+    border-radius: 7px;
+    box-shadow: 1px 1px 5px 1px #d3d3d3;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .right-column{ 
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 910px) {
+    .left-column, .right-column {   
+        width: 90%;
+    }
+    .left-column article{
+        top: 20%;
+    }
+}
+
+.home-page:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Footer */
+
+.nav-footer {
+    background-color: var(--gray);
+    margin-top: 50px;
+    height: 80px;
+    padding: 30px 0 20px 30px;
+    color: var(--primary-color-light)
+}
